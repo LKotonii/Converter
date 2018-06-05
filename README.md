@@ -1,2 +1,2 @@
 # Converter
-Simple converter to UK units 
+Simple converter SI to UK units 
