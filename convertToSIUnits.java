@@ -9,7 +9,7 @@ package Converter;
  *
  * @author Rats
  */
-public class convertToSIUnits {
+public class ConvertToSIUnits {
     
     
      // methods converting Imp Units to SI
