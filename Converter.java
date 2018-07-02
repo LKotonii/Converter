@@ -893,19 +893,19 @@ public class Converter extends JFrame {
             double meter = Double.parseDouble(meterTextField.getText());
             
             if (inchCheckBox.isSelected()){
-                inchTextField.setText( Double.toString(convertToImpUnits.meterToInch(meter)));
+                inchTextField.setText( Double.toString(ConvertToImpUnits.meterToInch(meter)));
             }
            else if (footCheckBox.isSelected()){
-                footTextField.setText( Double.toString(convertToImpUnits.meterToFoot(meter)));
+                footTextField.setText( Double.toString(ConvertToImpUnits.meterToFoot(meter)));
             }
             else if (yardCheckBox.isSelected()){
-                yardTextField.setText( Double.toString(convertToImpUnits.meterToYard(meter)));
+                yardTextField.setText( Double.toString(ConvertToImpUnits.meterToYard(meter)));
             }
             else if (mileCheckBox.isSelected()){
-                mileTextField.setText( Double.toString(convertToImpUnits.meterToMile(meter)));
+                mileTextField.setText( Double.toString(ConvertToImpUnits.meterToMile(meter)));
             }
             else if (leagueCheckBox.isSelected()){
-                leagueTextField.setText( Double.toString(convertToImpUnits.meterToLeague(meter)));
+                leagueTextField.setText( Double.toString(ConvertToImpUnits.meterToLeague(meter)));
             }
             else{
                 JOptionPane.showConfirmDialog(null,"Please choose Imperial Unit you want convert to ");
@@ -917,19 +917,19 @@ public class Converter extends JFrame {
             double meter = km*1000;
             
             if (inchCheckBox.isSelected()){
-                inchTextField.setText( Double.toString(convertToImpUnits.meterToInch(meter)));
+                inchTextField.setText( Double.toString(ConvertToImpUnits.meterToInch(meter)));
             }
            else if (footCheckBox.isSelected()){
-                footTextField.setText( Double.toString(convertToImpUnits.meterToFoot(meter)));
+                footTextField.setText( Double.toString(ConvertToImpUnits.meterToFoot(meter)));
             }
             else if (yardCheckBox.isSelected()){
-                yardTextField.setText( Double.toString(convertToImpUnits.meterToYard(meter)));
+                yardTextField.setText( Double.toString(ConvertToImpUnits.meterToYard(meter)));
             }
             else if (mileCheckBox.isSelected()){
-                mileTextField.setText( Double.toString(convertToImpUnits.meterToMile(meter)));
+                mileTextField.setText( Double.toString(ConvertToImpUnits.meterToMile(meter)));
             }
             else if (leagueCheckBox.isSelected()){
-                leagueTextField.setText( Double.toString(convertToImpUnits.meterToLeague(meter)));
+                leagueTextField.setText( Double.toString(ConvertToImpUnits.meterToLeague(meter)));
             }
             else{
                 JOptionPane.showConfirmDialog(null,"Please choose Imperial Unit you want convert to ");
@@ -940,19 +940,19 @@ public class Converter extends JFrame {
             double cm = Double.parseDouble(cmTextField.getText());
             double meter = cm/100;
             if (inchCheckBox.isSelected()){
-                inchTextField.setText( Double.toString(convertToImpUnits.meterToInch(meter)));
+                inchTextField.setText( Double.toString(ConvertToImpUnits.meterToInch(meter)));
             }
            else if (footCheckBox.isSelected()){
-                footTextField.setText( Double.toString(convertToImpUnits.meterToFoot(meter)));
+                footTextField.setText( Double.toString(ConvertToImpUnits.meterToFoot(meter)));
             }
             else if (yardCheckBox.isSelected()){
-                yardTextField.setText( Double.toString(convertToImpUnits.meterToYard(meter)));
+                yardTextField.setText( Double.toString(ConvertToImpUnits.meterToYard(meter)));
             }
             else if (mileCheckBox.isSelected()){
-                mileTextField.setText( Double.toString(convertToImpUnits.meterToMile(meter)));
+                mileTextField.setText( Double.toString(ConvertToImpUnits.meterToMile(meter)));
             }
             else if (leagueCheckBox.isSelected()){
-                leagueTextField.setText( Double.toString(convertToImpUnits.meterToLeague(meter)));
+                leagueTextField.setText( Double.toString(ConvertToImpUnits.meterToLeague(meter)));
             }
             else{
                 JOptionPane.showConfirmDialog(null,"Please choose Imperial Unit you want convert to ");
@@ -969,14 +969,14 @@ public class Converter extends JFrame {
             double inch = Double.parseDouble(inchTextField.getText());
             
             if (meterCheckBox.isSelected()){
-                meterTextField.setText( Double.toString(convertToSIUnits.inchToMeter(inch)));
+                meterTextField.setText( Double.toString(ConvertToSIunits.inchToMeter(inch)));
             }
            else if (kilometerCheckBox.isSelected()){
-               double km = convertToSIUnits.inchToMeter(inch)/1000;
+               double km = ConvertToSIunits.inchToMeter(inch)/1000;
                 kmTextField.setText( Double.toString(km));
             }
             else if (centimeterCheckBox.isSelected()){
-                double cm = convertToSIUnits.inchToMeter(inch)*100;
+                double cm = ConvertToSIunits.inchToMeter(inch)*100;
                 cmTextField.setText( Double.toString(cm));
             }
            
@@ -989,14 +989,14 @@ public class Converter extends JFrame {
             double foot = Double.parseDouble(footTextField.getText());
             
             if (meterCheckBox.isSelected()){
-                meterTextField.setText( Double.toString(convertToSIUnits.footToMeter(foot)));
+                meterTextField.setText( Double.toString(ConvertToSIunits.footToMeter(foot)));
             }
            else if (kilometerCheckBox.isSelected()){
-               double km = convertToSIUnits.footToMeter(foot)/1000;
+               double km = ConvertToSIunits.footToMeter(foot)/1000;
                 kmTextField.setText( Double.toString(km));
             }
             else if (centimeterCheckBox.isSelected()){
-                double cm = convertToSIUnits.footToMeter(foot)*100;
+                double cm = ConvertToSIunits.footToMeter(foot)*100;
                 cmTextField.setText( Double.toString(cm));
             }
            
@@ -1011,14 +1011,14 @@ public class Converter extends JFrame {
             double yard = Double.parseDouble(yardTextField.getText());
             
             if (meterCheckBox.isSelected()){
-                meterTextField.setText( Double.toString(convertToSIUnits.yardToMeter(yard)));
+                meterTextField.setText( Double.toString(ConvertToSIunits.yardToMeter(yard)));
             }
            else if (kilometerCheckBox.isSelected()){
-               double km = convertToSIUnits.yardToMeter(yard)/1000;
+               double km = ConvertToSIunits.yardToMeter(yard)/1000;
                 kmTextField.setText( Double.toString(km));
             }
             else if (centimeterCheckBox.isSelected()){
-                double cm = convertToSIUnits.yardToMeter(yard)*100;
+                double cm = ConvertToSIunits.yardToMeter(yard)*100;
                 cmTextField.setText( Double.toString(cm));
             }
            
@@ -1031,14 +1031,14 @@ public class Converter extends JFrame {
             double mile = Double.parseDouble(mileTextField.getText());
             
             if (meterCheckBox.isSelected()){
-                meterTextField.setText( Double.toString(convertToSIUnits.mileToMeter(mile)));
+                meterTextField.setText( Double.toString(ConvertToSIunits.mileToMeter(mile)));
             }
            else if (kilometerCheckBox.isSelected()){
-               double km = convertToSIUnits.mileToMeter(mile)/1000;
+               double km = ConvertToSIunits.mileToMeter(mile)/1000;
                 kmTextField.setText( Double.toString(km));
             }
             else if (centimeterCheckBox.isSelected()){
-                double cm = convertToSIUnits.mileToMeter(mile)*100;
+                double cm = ConvertToSIunits.mileToMeter(mile)*100;
                 cmTextField.setText( Double.toString(cm));
             }
            
@@ -1050,14 +1050,14 @@ public class Converter extends JFrame {
             double league = Double.parseDouble(leagueTextField.getText());
             
             if (meterCheckBox.isSelected()){
-                meterTextField.setText( Double.toString(convertToSIUnits.leagueToMeter(league)));
+                meterTextField.setText( Double.toString(ConvertToSIunits.leagueToMeter(league)));
             }
            else if (kilometerCheckBox.isSelected()){
-               double km = convertToSIUnits.leagueToMeter(league)/1000;
+               double km = ConvertToSIunits.leagueToMeter(league)/1000;
                 kmTextField.setText( Double.toString(km));
             }
             else if (centimeterCheckBox.isSelected()){
-                double cm = convertToSIUnits.leagueToMeter(league)*100;
+                double cm = ConvertToSIunits.leagueToMeter(league)*100;
                 cmTextField.setText( Double.toString(cm));
             }
            
@@ -1078,16 +1078,16 @@ public class Converter extends JFrame {
             double kg = gram/1000;
             if (ounceCheckBox.isSelected()){
                 
-                ounceTextField.setText( Double.toString(convertToImpUnits.kgToOunce(kg)));
+                ounceTextField.setText( Double.toString(ConvertToImpUnits.kgToOunce(kg)));
             }
            else if (poundCheckBox.isSelected()){
-                poundTextField.setText( Double.toString(convertToImpUnits.kgToPound(kg)));
+                poundTextField.setText( Double.toString(ConvertToImpUnits.kgToPound(kg)));
             }
             else if (stoneCheckBox.isSelected()){
-                stoneTextField.setText( Double.toString(convertToImpUnits.kgToStone(kg)));
+                stoneTextField.setText( Double.toString(ConvertToImpUnits.kgToStone(kg)));
             }
             else if (ukTonCheckBox.isSelected()){
-                ukTonTextField.setText( Double.toString(convertToImpUnits.kgToUKton(kg)));
+                ukTonTextField.setText( Double.toString(ConvertToImpUnits.kgToUKton(kg)));
             }
           else{
                 JOptionPane.showConfirmDialog(null,"Please choose Imperial Unit you want convert to ");
@@ -1098,16 +1098,16 @@ public class Converter extends JFrame {
             double kg = Double.parseDouble(kgTextField.getText());
             if (ounceCheckBox.isSelected()){
                 
-                ounceTextField.setText( Double.toString(convertToImpUnits.kgToOunce(kg)));
+                ounceTextField.setText( Double.toString(ConvertToImpUnits.kgToOunce(kg)));
             }
            else if (poundCheckBox.isSelected()){
-                poundTextField.setText( Double.toString(convertToImpUnits.kgToPound(kg)));
+                poundTextField.setText( Double.toString(ConvertToImpUnits.kgToPound(kg)));
             }
             else if (stoneCheckBox.isSelected()){
-                stoneTextField.setText( Double.toString(convertToImpUnits.kgToStone(kg)));
+                stoneTextField.setText( Double.toString(ConvertToImpUnits.kgToStone(kg)));
             }
             else if (ukTonCheckBox.isSelected()){
-                ukTonTextField.setText( Double.toString(convertToImpUnits.kgToUKton(kg)));
+                ukTonTextField.setText( Double.toString(ConvertToImpUnits.kgToUKton(kg)));
             }
           else{
                 JOptionPane.showConfirmDialog(null,"Please choose Imperial Unit you want convert to ");
@@ -1124,10 +1124,10 @@ public class Converter extends JFrame {
             double ounce = Double.parseDouble(ounceTextField.getText());
             
             if (kgCheckBox.isSelected()){
-                kgTextField.setText( Double.toString(convertToSIUnits.ounceToKg(ounce)));
+                kgTextField.setText( Double.toString(ConvertToSIunits.ounceToKg(ounce)));
             }
            else if (gramCheckBox.isSelected()){
-               double gram = convertToSIUnits.ounceToKg(ounce)*1000;
+               double gram = ConvertToSIunits.ounceToKg(ounce)*1000;
                 kmTextField.setText( Double.toString(gram));
             }
            
@@ -1141,10 +1141,10 @@ public class Converter extends JFrame {
             double pound = Double.parseDouble(poundTextField.getText());
             
            if (kgCheckBox.isSelected()){
-                kgTextField.setText( Double.toString(convertToSIUnits.poundToKg(pound)));
+                kgTextField.setText( Double.toString(ConvertToSIunits.poundToKg(pound)));
             }
            else if (gramCheckBox.isSelected()){
-               double gram = convertToSIUnits.poundToKg(pound)*1000;
+               double gram = ConvertToSIunits.poundToKg(pound)*1000;
                 kmTextField.setText( Double.toString(gram));
             }
            
@@ -1159,10 +1159,10 @@ public class Converter extends JFrame {
             double stone = Double.parseDouble(stoneTextField.getText());
             
             if (kgCheckBox.isSelected()){
-                kgTextField.setText( Double.toString(convertToSIUnits.StonetToKg(stone)));
+                kgTextField.setText( Double.toString(ConvertToSIunits.StonetToKg(stone)));
             }
            else if (gramCheckBox.isSelected()){
-               double gram = convertToSIUnits.StonetToKg(stone)*1000;
+               double gram = ConvertToSIunits.StonetToKg(stone)*1000;
                 kmTextField.setText( Double.toString(gram));
             }
            
@@ -1175,10 +1175,10 @@ public class Converter extends JFrame {
             double ukTon = Double.parseDouble(ukTonTextField.getText());
             
             if (kgCheckBox.isSelected()){
-                kgTextField.setText( Double.toString(convertToSIUnits.UKtonToKg(ukTon)));
+                kgTextField.setText( Double.toString(ConvertToSIunits.UKtonToKg(ukTon)));
             }
            else if (gramCheckBox.isSelected()){
-               double gram = convertToSIUnits.UKtonToKg(ukTon)*1000;
+               double gram = ConvertToSIunits.UKtonToKg(ukTon)*1000;
                 kmTextField.setText( Double.toString(gram));
             }
            
@@ -1197,21 +1197,21 @@ public class Converter extends JFrame {
         if (mlCheckBox.isSelected()){
             double ml = Double.parseDouble(mlTextField.getText());
             if (flOunceCheckBox.isSelected()){
-                flOunceTextField.setText(Double.toString(convertToImpUnits.mlToFluidOunce(ml)));
+                flOunceTextField.setText(Double.toString(ConvertToImpUnits.mlToFluidOunce(ml)));
                 }
             else if (cupCheckBox.isSelected()){
-                cupTextField.setText(Double.toString(convertToImpUnits.mlToCup(ml)));
+                cupTextField.setText(Double.toString(ConvertToImpUnits.mlToCup(ml)));
             }
             else if (quartCheckBox.isSelected()){
-                quartTextField.setText(Double.toString(convertToImpUnits.mlToQuart(ml)));
+                quartTextField.setText(Double.toString(ConvertToImpUnits.mlToQuart(ml)));
              
             }
             else if (pintCheckBox.isSelected()){
-                pintTextField.setText(Double.toString(convertToImpUnits.mlToPint(ml)));
+                pintTextField.setText(Double.toString(ConvertToImpUnits.mlToPint(ml)));
             
             }
             else if (galonCheckBox.isSelected()){
-                galonTextField.setText(Double.toString(convertToImpUnits.mlToGalon(ml)));
+                galonTextField.setText(Double.toString(ConvertToImpUnits.mlToGalon(ml)));
             
             }
             else{
@@ -1222,21 +1222,21 @@ public class Converter extends JFrame {
             double liter = Double.parseDouble(literTextField.getText());
             double ml = liter*1000;
             if (flOunceCheckBox.isSelected()){
-                flOunceTextField.setText(Double.toString(convertToImpUnits.mlToFluidOunce(ml)));
+                flOunceTextField.setText(Double.toString(ConvertToImpUnits.mlToFluidOunce(ml)));
                 }
             else if (cupCheckBox.isSelected()){
-                cupTextField.setText(Double.toString(convertToImpUnits.mlToCup(ml)));
+                cupTextField.setText(Double.toString(ConvertToImpUnits.mlToCup(ml)));
             }
             else if (quartCheckBox.isSelected()){
-                quartTextField.setText(Double.toString(convertToImpUnits.mlToQuart(ml)));
+                quartTextField.setText(Double.toString(ConvertToImpUnits.mlToQuart(ml)));
              
             }
             else if (pintCheckBox.isSelected()){
-                pintTextField.setText(Double.toString(convertToImpUnits.mlToPint(ml)));
+                pintTextField.setText(Double.toString(ConvertToImpUnits.mlToPint(ml)));
             
             }
             else if (galonCheckBox.isSelected()){
-                galonTextField.setText(Double.toString(convertToImpUnits.mlToGalon(ml)));
+                galonTextField.setText(Double.toString(ConvertToImpUnits.mlToGalon(ml)));
             
             }
              else{
@@ -1253,11 +1253,11 @@ public class Converter extends JFrame {
             double flOunce = Double.parseDouble(flOunceTextField.getText());
             
             if (mlCheckBox.isSelected()){
-                mlTextField.setText( Double.toString(convertToSIUnits.fluidOunceToMl(flOunce)));
+                mlTextField.setText( Double.toString(ConvertToSIunits.fluidOunceToMl(flOunce)));
             }
             else if (literCheckBox.isSelected()){
                
-               double ml = convertToSIUnits.fluidOunceToMl(flOunce)/1000;
+               double ml = ConvertToSIunits.fluidOunceToMl(flOunce)/1000;
                 literTextField.setText( Double.toString(ml));
             }
             else{
@@ -1269,11 +1269,11 @@ public class Converter extends JFrame {
             double cup = Double.parseDouble(cupTextField.getText());
             
           if (mlCheckBox.isSelected()){
-                mlTextField.setText( Double.toString(convertToSIUnits.cupToMl(cup)));
+                mlTextField.setText( Double.toString(ConvertToSIunits.cupToMl(cup)));
             }
             else if (literCheckBox.isSelected()){
                
-               double ml = convertToSIUnits.cupToMl(cup)/1000;
+               double ml = ConvertToSIunits.cupToMl(cup)/1000;
                 literTextField.setText( Double.toString(ml));
             }
             else{
@@ -1286,11 +1286,11 @@ public class Converter extends JFrame {
             double quart = Double.parseDouble(stoneTextField.getText());
             
             if (mlCheckBox.isSelected()){
-                mlTextField.setText( Double.toString(convertToSIUnits.quartToML(quart)));
+                mlTextField.setText( Double.toString(ConvertToSIunits.quartToML(quart)));
             }
             else if (literCheckBox.isSelected()){
                
-               double ml = convertToSIUnits.quartToML(quart)/1000;
+               double ml = ConvertToSIunits.quartToML(quart)/1000;
                 literTextField.setText( Double.toString(ml));
             }
             else{
@@ -1302,11 +1302,11 @@ public class Converter extends JFrame {
             double galon = Double.parseDouble(galonTextField.getText());
             
             if (mlCheckBox.isSelected()){
-                mlTextField.setText( Double.toString(convertToSIUnits.galonToMl(galon)));
+                mlTextField.setText( Double.toString(ConvertToSIunits.galonToMl(galon)));
             }
             else if (literCheckBox.isSelected()){
                
-               double ml = convertToSIUnits.galonToMl(galon)/1000;
+               double ml = ConvertToSIunits.galonToMl(galon)/1000;
                 literTextField.setText( Double.toString(ml));
             }
             else{
@@ -1328,7 +1328,7 @@ public class Converter extends JFrame {
               double fahr = Double.parseDouble(fahrTextField.getText());
                
             if (celsiusCheckBox.isSelected()){
-                celsiusTextField.setText(Double.toString(convertToSIUnits.fahrToCelsius(fahr)));
+                celsiusTextField.setText(Double.toString(ConvertToSIunits.fahrToCelsius(fahr)));
                 
             }
             else{
@@ -1339,7 +1339,7 @@ public class Converter extends JFrame {
               double rank = Double.parseDouble(rankinTextField.getText());
                
             if (celsiusCheckBox.isSelected()){
-                celsiusTextField.setText(Double.toString(convertToSIUnits.fahrToCelsius(rank)));
+                celsiusTextField.setText(Double.toString(ConvertToSIunits.fahrToCelsius(rank)));
                 
             }
             else{
@@ -1354,11 +1354,11 @@ public class Converter extends JFrame {
             double cels = Double.parseDouble(celsiusTextField.getText());
             
             if (fahrCheckBox.isSelected()){
-                fahrTextField.setText(Double.toString(convertToImpUnits.celsiusToFahr(cels)));
+                fahrTextField.setText(Double.toString(ConvertToImpUnits.celsiusToFahr(cels)));
                 
             }
             else if (rankinCheckBox.isSelected()){
-                rankinTextField.setText(Double.toString(convertToImpUnits.celsiusToRankin(cels)));
+                rankinTextField.setText(Double.toString(ConvertToImpUnits.celsiusToRankin(cels)));
             }
         }
         else {
