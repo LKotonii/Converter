@@ -9,7 +9,7 @@ package Converter;
  *
  * @author Rats
  */
-public class convertToImpUnits {
+public class ConvertToImpUnits {
        // methods converting SI units to imperial units
     // Length
     // checked
