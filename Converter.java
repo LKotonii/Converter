@@ -15,14 +15,10 @@ import javax.swing.JTextField;
 
 public class Converter extends JFrame {
 
-    /**
-     * Creates new form konwerterJednostek
-     */
     public Converter() {
         
         super("Converter of Units");
-        initComponents();
-        
+        initComponents();    
     }
 
     
@@ -125,29 +121,14 @@ public class Converter extends JFrame {
         setMinimumSize(new java.awt.Dimension(90, 22));
 
         meterCheckBox.setText("Meter");
-
         kilometerCheckBox.setText("Kilometer");
-
-        centimeterCheckBox.setText("Centimeter");
-        
-
+        centimeterCheckBox.setText("Centimeter");     
         cmTextField.setMinimumSize(new java.awt.Dimension(90, 22));
-        
-
         lengthLabel.setText("Length");
-
         inchCheckBox.setText("inch");
-
         footCheckBox.setText("Foot");
-
         yardCheckBox.setText("Yard");
-        
-        
-       
-        
-
         mileCheckBox.setText("Mile");
-
         leagueCheckBox.setText("League");
 
         inchTextField.setColumns(5);
@@ -178,7 +159,6 @@ public class Converter extends JFrame {
 
         quartCheckBox.setText("Quart");
        
-
         galonCheckBox.setText("Galon");
 
         cupTextField.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -195,22 +175,19 @@ public class Converter extends JFrame {
 
         kgCheckBox.setText("Kilogram");
         
-
         ounceCheckBox.setText("Ounce");
 
         poundCheckBox.setText("Pound");
 
         stoneCheckBox.setText("Stone");
 
-       ukTonCheckBox.setText("UKton");
-      
-
+        ukTonCheckBox.setText("UKton");
+    
         celsiusCheckBox.setText("Celsius");
 
         temperatureLabel.setText("Temperature");
 
-        ounceTextField.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-       
+        ounceTextField.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));       
 
         poundTextField.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
@@ -218,7 +195,6 @@ public class Converter extends JFrame {
        
         stoneTextField.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         
-
         rankinCheckBox.setText("Rankin");
 
         fahrCheckBox.setText("Fahrenheit");
@@ -248,8 +224,7 @@ public class Converter extends JFrame {
         lengthToImpUnits.setText("Length To Imperial units");
 
         lengthToSIunits.setText("Length to SI units");
-        
-        
+                
         // set Text Fields enabled 
         
         centimeterCheckBox.addActionListener((java.awt.event.ActionEvent evt) -> {
@@ -363,13 +338,8 @@ public class Converter extends JFrame {
            lengthToSIUnitsButtonActionPerformed(evt);
         
     });
-        
-        
-      
-        
-        
-        
-        // Text Fields Listeners (to avoid input wrong data)
+       
+        // Text Fields Listeners (to avoid input of letters)
         
         inchTextField.addKeyListener(new java.awt.event.KeyAdapter() {
             @Override
@@ -883,11 +853,8 @@ public class Converter extends JFrame {
         layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {ukTonTextField, celsiusTextField, cmTextField, cupTextField, fahrTextField, flOunceTextField, footTextField, galonTextField, gramTextField, inchTextField, rankinTextField, kgTextField, kmTextField, leagueTextField, literTextField, meterTextField, mileTextField, mlTextField, ounceTextField, pintTextField, poundTextField, quartTextField, stoneTextField, yardTextField});
 
         pack();
-    }// </editor-fold>
-    
-    
- 
-    
+    }
+      
     private void lengthToImpUnitsButtonActionPerformed (ActionEvent evt){
         if (meterCheckBox.isSelected()){
             double meter = Double.parseDouble(meterTextField.getText());
@@ -1151,9 +1118,7 @@ public class Converter extends JFrame {
             else{
                 JOptionPane.showConfirmDialog(null,"Please choose SI Unit you want convert to ");
             }
-            
-        
-            
+                   
         }
         else if (stoneCheckBox.isSelected()){
             double stone = Double.parseDouble(stoneTextField.getText());
@@ -1311,16 +1276,12 @@ public class Converter extends JFrame {
             }
             else{
                 JOptionPane.showConfirmDialog(null,"Please choose SI Unit you want convert to ");
-            }
-           
-            
+            }     
         }
           
         else {
             JOptionPane.showConfirmDialog(null, "Please choose SI Unit you want convert to Imperial Unit");
-        }
-                
-     
+        }    
     }
     
     private void temperatureToSIunitsButonActionPerformed(ActionEvent evt){
@@ -1328,8 +1289,7 @@ public class Converter extends JFrame {
               double fahr = Double.parseDouble(fahrTextField.getText());
                
             if (celsiusCheckBox.isSelected()){
-                celsiusTextField.setText(Double.toString(ConvertToSIunits.fahrToCelsius(fahr)));
-                
+                celsiusTextField.setText(Double.toString(ConvertToSIunits.fahrToCelsius(fahr)));           
             }
             else{
                 JOptionPane.showConfirmDialog(rootPane, "Choose SI temperature unit");
@@ -1339,14 +1299,12 @@ public class Converter extends JFrame {
               double rank = Double.parseDouble(rankinTextField.getText());
                
             if (celsiusCheckBox.isSelected()){
-                celsiusTextField.setText(Double.toString(ConvertToSIunits.fahrToCelsius(rank)));
-                
+                celsiusTextField.setText(Double.toString(ConvertToSIunits.fahrToCelsius(rank)));        
             }
             else{
                 JOptionPane.showConfirmDialog(rootPane, "Choose SI temperature unit");
             }
-          }
-        
+          }        
     }
     
     private void temperatureToImpUnitsButtonActionPerformed(ActionEvent evt) { 
@@ -1354,8 +1312,7 @@ public class Converter extends JFrame {
             double cels = Double.parseDouble(celsiusTextField.getText());
             
             if (fahrCheckBox.isSelected()){
-                fahrTextField.setText(Double.toString(ConvertToImpUnits.celsiusToFahr(cels)));
-                
+                fahrTextField.setText(Double.toString(ConvertToImpUnits.celsiusToFahr(cels)));               
             }
             else if (rankinCheckBox.isSelected()){
                 rankinTextField.setText(Double.toString(ConvertToImpUnits.celsiusToRankin(cels)));
@@ -1363,9 +1320,7 @@ public class Converter extends JFrame {
         }
         else {
             JOptionPane.showConfirmDialog(null, "Choose SI temperature unit");
-        }
-        
-      
+        }      
     } 
     
    
@@ -1376,10 +1331,7 @@ public class Converter extends JFrame {
             }
         }
 }
-
-    
-     
-     
+ 
     private void jTextField1KeyPressed(KeyEvent evt) {
     if (evt.isControlDown() && evt.getKeyCode() == KeyEvent.VK_V)
     {
@@ -1409,9 +1361,6 @@ public class Converter extends JFrame {
         }
     return false ;
     }
-    
-    
-    
     
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
@@ -1464,10 +1413,7 @@ public class Converter extends JFrame {
     private javax.swing.JButton lengthToImpUnits;
     private javax.swing.JButton lengthToSIunits;
     private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JSeparator jSeparator1;
-    private javax.swing.JSeparator jSeparator2;
-    private javax.swing.JSeparator jSeparator3;
+    private javax.swing.JLabel jLabel6
     private javax.swing.JCheckBox rankinCheckBox;
     private javax.swing.JTextField rankinTextField;
     private javax.swing.JCheckBox kgCheckBox;
